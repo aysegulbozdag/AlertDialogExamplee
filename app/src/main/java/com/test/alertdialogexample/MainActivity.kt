@@ -69,18 +69,10 @@ fun DialogExamples(openAlertDialog: MutableState<Boolean>) {
                 openAlertDialog.value = false
                 println("Confirmation registered")
             },
-            dialogTitle = "Alert dialog example",
-            dialogText = "This is an example of an alert dialog with buttons.",
+            dialogTitle = "Is alert dialog open?",
+            dialogText = "Alert Dialog is open. Do you want to close it?",
             icon = androidx.compose.material.icons.Icons.Default.Info
         )
-}
-
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
 }
 
 @Preview(showBackground = true)
